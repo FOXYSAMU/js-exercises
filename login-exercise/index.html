@@ -13,28 +13,22 @@
 
         function logIn() {
             let join = prompt('Who\'s there')
-            if (join == "Admin") {
+            if (join === "Admin") {
                 let pass = prompt('Passsword?')
-                if(pass == 'TheMaster')
+                if(pass === 'TheMaster')
                 {
                     alert("Welcome!")
                 }
-                else if (pass == ""){
+                else if (pass === "" || pass === null){
                     alert("Canceled")
-                }
-                else if (pass == null){
-                alert("Canceled")
                 }
                 else {
                     alert("Wrong password")
                 }
             }
-            else if (join == ""){
-                alert("Canceled")
-            }
-            else if (join == null){
-                alert("Canceled")
-            }
+            else if (join === "" || join === null){
+                    alert("Canceled")
+                }
             else {
                 alert("I don't know you")
             }
